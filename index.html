@@ -11,30 +11,34 @@
     }
 
     .pc-hero {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      background-image: url("background.jpg"); /* 같은 폴더에 있어야 함 */
-      background-size: cover;
-      background-position: center;
+  width: 100%;
+  height: 100vh;
 
-      display: flex;
-      align-items: flex-start; /* 위쪽 기준 */
-      justify-content: center; /* 좌우 중앙 */
-    }
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
 
-    .blur-box {
-      width: 100%;
-      max-width: 1200px;
-      aspect-ratio: 16 / 9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 
-      background: rgba(0,0,0,0.3); /* 검정색 블러 */
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
+  padding: 137px 71px 49px 71px;
+  box-sizing: border-box;
+}
 
-      border-radius: 16px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-    }
+.blur-box {
+  width: 100%;
+  max-width: 1200px;
+  aspect-ratio: 16 / 9;
+
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
   </style>
 </head>
 <body>
@@ -43,5 +47,6 @@
   </div>
 </body>
 </html>
+
 
 
