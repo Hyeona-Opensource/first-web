@@ -4,74 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Before Login</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .container {
-            background-color: white;
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-
-        .big-background {
-            position: absolute;
-            height: 1024px;
-            left: -191px;
-            top: 0;
-            width: 1821px;
-            box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25), 0px 4px 4px 0px rgba(0,0,0,0.25);
-        }
-
-        .big-background img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: 50% 50%;
-            pointer-events: none;
-        }
-
-        .union-container {
-            position: absolute;
-            height: 879px;
-            left: 71px;
-            right: 71px;
-            top: 96px;
-        }
-
-        .union-svg {
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
-
-        /* 상단 탭 */
-        .top-tab {
-            position: absolute;
-            backdrop-filter: blur(50px);
-            -webkit-backdrop-filter: blur(50px);
-            background-color: rgba(220, 200, 200, 0.5);
-            height: 41px;
-            left: 349px;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            top: 96px;
-            width: 210px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -86,12 +19,12 @@
                 <path 
                     d="M232 0C243.046 0 252 8.95431 252 20V41H1258C1280.09 41 1298 58.9086 1298 81V839C1298 861.091 1280.09 879 1258 879H40C17.9086 879 0 861.091 0 839V81C6.31457e-06 58.9086 17.9086 41 40 41H42V20C42 8.95431 50.9543 2.0133e-07 62 0H232Z" 
                     fill="black" 
-                    fill-opacity="0.9" 
+                    fill-opacity="0.5" 
                     filter="url(#blur-filter)"
                 />
                 <defs>
                     <filter id="blur-filter">
-                        <feGaussianBlur stdDeviation="60" />
+                        <feGaussianBlur stdDeviation="100" />
                     </filter>
                 </defs>
             </svg>
@@ -99,8 +32,13 @@
 
         <!-- 상단 탭 -->
         <div class="top-tab"></div>
+
+        <!-- 메인 컨텐츠 영역 (여기에 로그인 폼 등을 추가할 수 있습니다) -->
+        <div class="content-area">
+            <!-- 컨텐츠를 여기에 추가하세요 -->
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
