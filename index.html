@@ -13,22 +13,37 @@
             <img src="background.jpg" alt="">
         </div>
 
-        <!-- SVG 블러 영역 -->
-        <div class="union-container">
-            <svg class="union-svg" fill="none" preserveAspectRatio="none" viewBox="0 0 1298 879">
-                <path 
-                    d="M232 0C243.046 0 252 8.95431 252 20V41H1258C1280.09 41 1298 58.9086 1298 81V839C1298 861.091 1280.09 879 1258 879H40C17.9086 879 0 861.091 0 839V81C6.31457e-06 58.9086 17.9086 41 40 41H42V20C42 8.95431 50.9543 2.0133e-07 62 0H232Z" 
-                    fill="black" 
-                    fill-opacity="0.5" 
-                    filter="url(#blur-filter)"
-                />
-                <defs>
-                    <filter id="blur-filter">
-                        <feGaussianBlur stdDeviation="100" />
-                    </filter>
-                </defs>
-            </svg>
-        </div>
+<div class="union-container">
+    <svg
+        class="union-svg"
+        viewBox="0 0 1298 879"
+        preserveAspectRatio="none"
+    >
+        <defs>
+            <filter
+                id="blur-filter"
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%"
+            >
+                <feGaussianBlur stdDeviation="100" />
+            </filter>
+        </defs>
+
+        <rect
+            x="0"
+            y="0"
+            width="1298"
+            height="879"
+            rx="40"
+            ry="40"
+            fill="black"
+            fill-opacity="0.45"
+            filter="url(#blur-filter)"
+        />
+    </svg>
+</div>
 
         <!-- 상단 탭 -->
         <div class="top-tab"></div>
@@ -42,3 +57,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+

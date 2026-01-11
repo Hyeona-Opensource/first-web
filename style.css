@@ -47,10 +47,24 @@ body {
 .union-container {
     position: absolute;
     height: 879px;
+    width: 1298px;
     left: 71px;
     top: 96px;
-    width: 1298px;
+
+    /* 추가 */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
+
+.union-container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    pointer-events: none;
+}
+
 
 .union-svg {
     display: block;
@@ -81,23 +95,4 @@ body {
     height: 838px;
     padding: 40px;
     z-index: 10;
-}
-
-/* 반응형 처리 (선택사항) */
-@media (max-width: 1440px) {
-    .big-background {
-        left: -100px;
-        width: 1600px;
-    }
-    
-    .union-container,
-    .content-area {
-        left: 40px;
-        right: 40px;
-        width: auto;
-    }
-    
-    .top-tab {
-        left: 250px;
-    }
 }
