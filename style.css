@@ -50,10 +50,6 @@ body {
     width: 1298px;
     left: 71px;
     top: 96px;
-
-    /* 추가 */
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
 }
 
 .union-container::after {

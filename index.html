@@ -27,7 +27,7 @@
                 width="200%"
                 height="200%"
             >
-                <feGaussianBlur stdDeviation="50" />
+                <feGaussianBlur stdDeviation="180" />
             </filter>
         </defs>
 
@@ -39,7 +39,7 @@
             rx="40"
             ry="40"
             fill="black"
-            fill-opacity="0.45"
+            fill-opacity="0.95"
             filter="url(#blur-filter)"
         />
     </svg>
@@ -50,7 +50,11 @@
 
         <!-- 메인 컨텐츠 영역 (여기에 로그인 폼 등을 추가할 수 있습니다) -->
         <div class="content-area">
-            <!-- 컨텐츠를 여기에 추가하세요 -->
+            <form action="/login" method="post">
+                <input type="text" name="id" required placeholder="ID">
+                <input name="password" type="password" required placeholder="Password">
+                <input type="submit" value="LOGIN">
+            </form>
         </div>
     </div>
 
