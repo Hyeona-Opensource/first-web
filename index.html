@@ -15,9 +15,48 @@
             </form>
         </div>
 
-        <!--학원 소개 버튼-->
-        <div class="academy-box">
-            <button type="button">학원 소개</button>
+<div class="union-container">
+    <svg
+        class="union-svg"
+        viewBox="0 0 1298 879"
+        preserveAspectRatio="none"
+    >
+        <defs>
+            <filter
+                id="blur-filter"
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%"
+            >
+                <feGaussianBlur stdDeviation="180" />
+            </filter>
+        </defs>
+
+        <rect
+            x="0"
+            y="0"
+            width="1298"
+            height="879"
+            rx="40"
+            ry="40"
+            fill="black"
+            fill-opacity="0.95"
+            filter="url(#blur-filter)"
+        />
+    </svg>
+</div>
+
+        <!-- 상단 탭 -->
+        <div class="top-tab"></div>
+
+        <!-- 메인 컨텐츠 영역 (여기에 로그인 폼 등을 추가할 수 있습니다) -->
+        <div class="content-area">
+            <form action="/login" method="post">
+                <input type="text" name="id" required placeholder="ID">
+                <input name="password" type="password" required placeholder="Password">
+                <input type="submit" value="LOGIN">
+            </form>
         </div>
 
         <!--For Teacher 버튼-->
