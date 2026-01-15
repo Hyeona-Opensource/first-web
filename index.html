@@ -3,63 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Before Login</title>
-    <link rel="stylesheet" href="style.css">
+    <title>초안</title>
 </head>
 <body>
-    <div class="container">
-        <!-- 배경 이미지 -->
-        <div class="big-background">
-            <img src="background.jpg" alt="">
-        </div>
 
-<div class="union-container">
-    <svg
-        class="union-svg"
-        viewBox="0 0 1298 879"
-        preserveAspectRatio="none"
-    >
-        <defs>
-            <filter
-                id="blur-filter"
-                x="-50%"
-                y="-50%"
-                width="200%"
-                height="200%"
-            >
-                <feGaussianBlur stdDeviation="180" />
-            </filter>
-        </defs>
+    <div class="content-row">
 
-        <rect
-            x="0"
-            y="0"
-            width="1298"
-            height="879"
-            rx="40"
-            ry="40"
-            fill="black"
-            fill-opacity="0.95"
-            filter="url(#blur-filter)"
-        />
-    </svg>
-</div>
-
-        <!-- 상단 탭 -->
-        <div class="top-tab"></div>
-
-        <!-- 메인 컨텐츠 영역 (여기에 로그인 폼 등을 추가할 수 있습니다) -->
-        <div class="content-area">
-            <form action="/login" method="post">
-                <input type="text" name="id" required placeholder="ID">
-                <input name="password" type="password" required placeholder="Password">
-                <input type="submit" value="LOGIN">
+        <div class="search-box">
+        <!--검색 영역(검색 엔진 아직 검색 요청을 보낼 주소, 검색에 적합한 방식, 서버가 검색어를 읽는 이름, 명확한 전송 트리거 추가하지 않음 구조만 잡음)-->            <form action="">
+                <input type="text" required placeholder="🔍 검색해 보세요">
             </form>
         </div>
+
+        <!--학원 소개 버튼-->
+        <div class="academy-box">
+            <button type="button">학원 소개</button>
+        </div>
+
+        <!--For Teacher 버튼-->
+        <div class="forteacher-box">
+            <button type="button">For Teacher</button>
+        </div>
+
     </div>
 
-    <script src="script.js"></script>
+
+    <div class="container">
+
+
+        <!--로그인 + 공지사항 -->
+        <div class="top-row">
+            
+            <!--로그인 영역-->
+            <div class="login-box">
+                <form action="/login" method="post">
+                    <input type="text" name="id" required placeholder="ID">
+                    <input name="password" type="password" required placeholder="Password">
+                    <input type="submit" value="LOGIN">
+                </form>
+            </div>
+
+            <!--공지사항 & 이벤트 배너 등 이미지 첨부-->
+            <div class="announcement">
+                <img src="doughnuts.jpg" alt="이벤트 배너" width="300">
+                <button type="button">+</button>
+            </div>
+
+        </div>
+
+        <!--학원 정보 등 + 책 추천-->
+        <div class="bottom-row">
+            <div class="information">
+                <h4>학원 정보</h4>
+                <p>로그인 후에는 추천 도서가 보일 예정</p>
+            </div>
+
+            <div class="book-recommend">
+                <!-- 나중에 책 표지들이 들어갈 자리-->
+            </div>
+        </div>
+
+        
+    </div>
+
 </body>
 </html>
-
-
