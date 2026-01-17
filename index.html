@@ -39,34 +39,45 @@
     <div class="container">
 
 
-        <!--로그인 + 공지사항 -->
+        <!-- 상단 영역 -->
         <div class="top-row">
             
-            <!--로그인 영역-->
-            <div class="login-box">
-                <form action="/login" method="post">
-                    <div class="inputs">
-                        <input type="text" name="id" required placeholder="ID">
-                        <input name="password" type="password" required placeholder="Password">
-                    </div>
-                    <input type="submit" value="LOGIN" class="login-button">
-                </form>
-            </div>
+            <!--왼쪽 컬럼 로그인 + 학원 정보-->
+            <div class="left-column">
+                <div class="login-box">
+                    <form action="/login" method="post">
+                        <div class="inputs">
+                            <input type="text" name="id" required placeholder="ID">
+                            <input name="password" type="password" required placeholder="Password">
+                        </div>
+                        <input type="submit" value="LOGIN" class="login-button">
+                    </form>
+                </div>
 
+                <!--학원 정보 등 + 책 추천-->
+                <div class="bottom-row">
+                    <div class="information">
+                        <h4>학원 정보</h4>
+                        <p>로그인 후에는 추천 도서가 보일 예정</p>
+                    </div>
+                </div>
+
+
+            </div>
+                
             <!--공지사항 & 이벤트 배너 등 이미지 첨부-->
             <div class="announcement">
                 <img src="doughnuts.jpg" alt="이벤트 배너" width="300">
                 <button type="button">+</button>
             </div>
+            
 
         </div>
 
-        <!--학원 정보 등 + 책 추천-->
-        <div class="bottom-row">
-            <div class="information">
-                <h4>학원 정보</h4>
-                <p>로그인 후에는 추천 도서가 보일 예정</p>
-            </div>
+        
+        
+        <div class="extra-section">
+            <!-- 나중에 게임 들어올 자리-->
         </div>
 
         
