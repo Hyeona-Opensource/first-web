@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인 전</title>
+    <!--html과 CSS를 연결-->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
     <div class="content-row">
 
-        <div class="search-box">
-        <!--검색 영역(검색 엔진 아직 검색 요청을 보낼 주소, 검색에 적합한 방식, 서버가 검색어를 읽는 이름, 명확한 전송 트리거 추가하지 않음 구조만 잡음)-->            <form action="">
-                <input type="text" required placeholder="🔍 검색해 보세요">
-            </form>
-        </div>
+        <div class="right-menu">
 
-        <!--학원 소개-->
-        <div class="academy-box">
-            <a href="academy.html">학원 소개</a>
-        </div>
+            <div class="search-box">
+            <!--검색 영역(검색 엔진 아직 검색 요청을 보낼 주소, 검색에 적합한 방식, 서버가 검색어를 읽는 이름, 명확한 전송 트리거 추가하지 않음 구조만 잡음)-->
+                <form action="">
+                    <input type="text" required placeholder="🔍 검색해 보세요">
+                </form>
+            </div>
 
-        <!--For Teacher 페이지로 -->
-        <div class="forteacher-box">
-            <a href="teacher-page.html">For Teacher</a>
+            <!--학원 소개-->
+            <div class="academy-box">
+                <a href="academy.html">학원 소개</a>
+            </div>
+
+            <!--For Teacher 페이지로 -->
+            <div class="forteacher-box">
+                <a href="teacher-page.html">For Teacher</a>
+            </div>
+
         </div>
 
     </div>
@@ -37,9 +45,11 @@
             <!--로그인 영역-->
             <div class="login-box">
                 <form action="/login" method="post">
-                    <input type="text" name="id" required placeholder="ID">
-                    <input name="password" type="password" required placeholder="Password">
-                    <input type="submit" value="LOGIN">
+                    <div class="inputs">
+                        <input type="text" name="id" required placeholder="ID">
+                        <input name="password" type="password" required placeholder="Password">
+                    </div>
+                    <input type="submit" value="LOGIN" class="login-button">
                 </form>
             </div>
 
