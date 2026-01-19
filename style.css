@@ -120,11 +120,13 @@ body {
     padding: 0 8px;
     border-radius: 15px;
     border: none;
-    background-color: #DCC8C8;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
     margin-top: 2px; /* PW ↔ 버튼 간격 */
+
+    background-color: #DCC8C8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .login-button:hover {
