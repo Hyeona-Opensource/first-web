@@ -42,9 +42,9 @@
         <!-- 상단 영역 -->
         <div class="top-row">
             
-            <!--왼쪽 컬럼 로그인 + 학원 정보-->
+            <!--로그인 전 왼쪽 컬럼 로그인 + 학원 정보-->
             <div class="left-column">
-                <div class="login-box">
+                <div class="login-box" id="before-login">
                     <form action="/login" method="post">
                         <div class="inputs">
                             <input type="text" name="id" required placeholder="ID">
@@ -55,6 +55,18 @@
                             <img src="login-button.svg" alt="로그인" class="icon">
                         </button>
                     </form>
+                </div>
+
+                <!--로그인 후 내 정보 영역-->
+                <div class="mypage-box hidden" id="after-login">
+                    <p class="user-name">박규봉님</p>
+                    <a href="mypage.html">내 정보</a>
+                    <a href="index.html">로그아웃</a>
+                    <p class="level-class">레벨 / 반</p>
+                    <p class="point">포인트</p>
+                    <a href="word-quiz-history.html">▶ 단어 퀴즈 기록</a><br>
+                    <a href="my-book-history.html">▶ My Book History</a><br>
+                    <button type="button">▶ 어쩌고 저쩌고</button>
                 </div>
 
                 <!--학원 정보 등 + 책 추천-->
@@ -84,6 +96,9 @@
 
         
     </div>
+
+    <!-- js 파일 연결 -->
+     <script src="script.js"></script>
 
 </body>
 </html>
